@@ -14,4 +14,4 @@ If the printout doesn't stick, then try adjusting the first layer from 0.3 to 0.
     Quitte Cura !
     Ensuite, copiez simplement les fichiers dans les répertoires du même nom.
 
-Si l'impression ne colle pas, essayez d'ajuster la première couche de 0,3 à 0,2 ou 0,1 mm.
+Si l'impression ne colle pas, essayez d'ajuster la première couche de 0.3 à 0.2 ou 0.1 mm.
