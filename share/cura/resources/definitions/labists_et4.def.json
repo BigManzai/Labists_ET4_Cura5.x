@@ -16,10 +16,10 @@
         "machine_depth": { "default_value": 220 },
         "machine_height": { "default_value": 250 },
         "machine_start_gcode": {
-            "default_value": "G28 ;Home\nG1 Z15.0 F2000 ;Move the platform"
+            "default_value": "; Labists ET4 Start G-code\nG92 E0 ; Reset Extruder\nG28 ; Home all axes\nG1 Z2.0 F3000 ; prevent scratching of Heat Bed\nG1 X0.1 Y20 Z0.5 F3000.0 ; Move to start position\nG1 X0.1 Y200.0 Z0.5 F1500.0 E15 ; Draw line\nG1 X0.4 Y200.0 Z0.3 F3000.0 ; Move to side\nG1 X0.4 Y20 Z0.3 F1500.0 E30 ; Draw line\nG92 E0 ; Reset Extruder\nG1 Z2.0 F3000 ; prevent scratching of Heat Bed\nG1 X5 Y20 Z0.5 F3000.0"
         },
         "machine_end_gcode": {
-            "default_value": "M104 S0\nM140 S0\nG92 E0\nG1 E-10 F2000\nG28 X0 Y0\nM84"
+            "default_value": "; Labists ET4 End G-code\nM104 S0\nM140 S0\nG92 E0\nG1 E-10 F2000\n; 20mm\nG1 Z20 F1200\nM84"
         }
     }
 }
